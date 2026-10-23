@@ -6,4 +6,8 @@ intermediates/
 work/
 
 # BOLT pipeline artifacts (perf data, profiles, optimized binaries)
-results/
+results/*.fdata
+results/*.perf.data
+results/*.bolt
+results/*.old
+results/flame/*.folded
