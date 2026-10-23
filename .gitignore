@@ -1,0 +1,9 @@
+# intermediate / temporary files: standalone tree at the repo root
+# (generated inputs, harness + generator binaries) - rm -rf to clean
+intermediates/
+
+# vendored source clones + build dirs
+work/
+
+# BOLT pipeline artifacts (perf data, profiles, optimized binaries)
+results/
