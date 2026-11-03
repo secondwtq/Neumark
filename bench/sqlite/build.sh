@@ -20,7 +20,8 @@ source "$(cd "$(dirname "$0")/.." && pwd)/vars.sh"
 # --- fetch the source (idempotent) ------------------------------------------
 # pinned source version (release tag); to update, change the pin and
 # re-clone (rm -rf work/sqlite):
-fetch_repo https://github.com/sqlite/sqlite.git version-3.47.0
+# Pinned to 3.48, previous versions mandate a dependence on Tcl
+fetch_repo https://github.com/sqlite/sqlite.git version-3.48.0
 
 # --- build (autotools) --------------------------------------------------------
 echo "== building sqlite3 ..."

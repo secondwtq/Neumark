@@ -19,6 +19,8 @@ OUT=$INT_DIR/dwz_out.so
 require "$DWZ" "dwz not found: $DWZ"
 require "$INPUT" "input not found: $INPUT (run bench/dwz/setup.sh or set DWZ_INPUT)"
 
+mkdir -p "$INT_DIR" || exit 1
+
 run_bench "$APP" "$BUDGET" "$DWZ" -q -o "$OUT" "$INPUT"
 echo "$APP: iterations=$ITER wall=${ELAPSED}s"
 echo "$APP: binary=$DWZ input=$INPUT"

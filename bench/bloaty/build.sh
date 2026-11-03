@@ -22,7 +22,7 @@ source "$(cd "$(dirname "$0")/.." && pwd)/vars.sh"
 # zlib, zstd
 # pinned source version (release tag); to update, change the pin and
 # re-clone (rm -rf work/bloaty):
-fetch_repo https://github.com/google/bloaty.git v1.1 submodules
+fetch_repo https://github.com/google/bloaty.git f1a83e63f36beb628dcf022e1201a2eb391a22a6 submodules
 
 # --- patch + build -----------------------------------------------------------
 # bloaty's CMakeLists overwrites CMAKE_CXX_FLAGS / CMAKE_CXX_FLAGS_RELEASE,
